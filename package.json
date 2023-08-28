@@ -6,7 +6,7 @@
   "scripts": {
     "us": "node ./script/insertUnocss.js",
     "dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "pnpm run us && vuepress build docs"
   },
   "keywords": [],
   "author": "",

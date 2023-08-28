@@ -1,18 +1,19 @@
 <template>
   <div>
-    <Content />
     <template v-for="item of pages" :key="item.key">
-      <article>
+      <article @click="gotoDetails(item.path)">
         <h2>{{ item.title }}</h2>
       </article>
     </template>
+    <Content />
   </div>
 </template>
 <script setup>
 import { usePagesData } from '@vuepress/client'
 import { ref } from 'vue';
+import { useRouter } from 'vue-router'
 
-
+const router = useRouter();
 // 获取pages
 function getPages(params) {
   const tempPages = usePagesData();
@@ -23,6 +24,11 @@ getPages().then(data => {
   pages.value = data;
   console.log(data)
 })
+
+
+function gotoDetails(path) {
+  router.push({ path })
+}
 
 
 
