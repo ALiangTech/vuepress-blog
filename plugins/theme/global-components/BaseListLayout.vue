@@ -4,11 +4,12 @@
       <AHeader></AHeader>
     </div>
     <div>
-      <Content></Content>
+      <AArticels></AArticels>
     </div>
   </div>
 </template>
 <script setup>
+import AArticels from './../components/a-articles.vue'
 import AHeader from './../components/a-header.vue'
 
 
