@@ -1,11 +1,19 @@
 <template>
-  <div>layout</div>
+  <div>
+    <div>kkk</div>
+    <Content />
+  </div>
 </template>
-<script>
+<script setup>
+import { usePagesData } from '@vuepress/client'
+import { onMounted } from 'vue';
 
-export default {
-  mounted() {
-    console.log(this)
-  }
-}
+const pages = usePagesData();
+onMounted(() => {
+  console.log(Object.values(pages.value).forEach(f => {
+    console.log(f().then(data => {
+      console.log(data)
+    }), 'f')
+  }))
+})
 </script>
