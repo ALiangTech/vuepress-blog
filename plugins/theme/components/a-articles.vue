@@ -15,7 +15,10 @@
                     <h3 class="">{{ page.title }}</h3>
                     <p class="indent-4 line-clamp-4">{{ getDescription(page) }}</p>
                   </div>
-                  <span class="text-neutral">更新时间：{{ getUpdateTime(page) }}</span>
+                  <div class="flex gap-2">
+                    <span class="text-neutral">更新:{{ getUpdateTime(page) }}</span>
+                    <span class="text-neutral">创建:{{ getCreateTime(page) }}</span>
+                  </div>
                 </div>
               </section>
             </div>
@@ -40,6 +43,7 @@ function getPages() {
 const pages = ref([])
 getPages().then(data => {
   pages.value = data.filter(({ title }) => title); // 没有title的界面 不在这里展示
+  console.log(data)
 })
 
 
@@ -49,6 +53,10 @@ function gotoDetails(path) {
 
 function getUpdateTime(page) {
   return transformDate(page.git?.updatedTime)
+}
+
+function getCreateTime(page) {
+  return transformDate(page.git?.createdTime)
 }
 
 function getCover(page) {
