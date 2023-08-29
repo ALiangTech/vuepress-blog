@@ -4,7 +4,7 @@ import { theme as CustomTheme } from '../../plugins/theme'
 import UnoCSS from 'unocss/vite'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { gitPlugin } from '@vuepress/plugin-git'
-
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '你好， VuePress ！',
@@ -16,7 +16,13 @@ export default defineUserConfig({
     // 配置项
     createdTime: true,
     updatedTime: true,
-  }),],
+  }),
+  googleAnalyticsPlugin({
+    // 配置项
+    id: 'G-JPZ03GJTKD',
+    debug: true,
+  }),
+  ],
   bundler: viteBundler({
     viteOptions: {
       plugins: [UnoCSS()]
