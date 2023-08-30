@@ -1,17 +1,16 @@
 <template>
-  <div>
-    <div>
-      <AHeader></AHeader>
-    </div>
+  <div class="relative">
+    <AHeader></AHeader>
+    <ABg></ABg>
     <section class="flex flex-justify-center gap-10 px-20">
       <article class="flex-1">
         <Content></Content>
       </article>
       <div class="hidden md:block">
-        <div class="sticky top-50% translate-y--50%">
+        <!-- <div class="sticky top-50% translate-y--50%">
           <p>目录</p>
           <Directory></Directory>
-        </div>
+        </div> -->
       </div>
     </section>
   </div>
@@ -19,6 +18,7 @@
 <script setup>
 import { h } from 'vue';
 import AHeader from './../components/a-header.vue'
+import ABg from './../components/a-bg.vue'
 import { usePageData } from '@vuepress/client'
 const page = usePageData();
 

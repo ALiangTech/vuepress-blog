@@ -1,14 +1,14 @@
 <template>
   <section>
     <AHeader></AHeader>
-    <div>
-      <AArticels></AArticels>
-    </div>
+    <ABg></ABg>
+    <AArticels></AArticels>
   </section>
 </template>
 <script setup>
 import AArticels from './../components/a-articles.vue'
 import AHeader from './../components/a-header.vue'
+import ABg from './../components/a-bg.vue'
 
 </script>
 <style scoped>
