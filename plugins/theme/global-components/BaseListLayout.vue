@@ -1,8 +1,6 @@
 <template>
   <section>
-    <div class="h-sm header">
-      <AHeader></AHeader>
-    </div>
+    <AHeader></AHeader>
     <div>
       <AArticels></AArticels>
     </div>

@@ -3,7 +3,7 @@
     <div class="lg:w-4xl lg:ma pt-6">
       <template v-for="page of pages" :key="page.key">
         <!-- @click="gotoDetails(page.path)" -->
-        <div class="mb-2">
+        <div @click="gotoDetails(page.path)" class="mb-2">
           <ACrad class="rounded-20px">
             <div class="z-1">
               <section class="flex flex-col lg:flex-row flex-items-center md:gap-4 lg:h-214px">
