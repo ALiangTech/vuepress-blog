@@ -25,7 +25,7 @@
 .card::before {
   content: '';
   position: absolute;
-  width: 800px;
+  width: 900px;
   background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
   height: 70px;
   animation: rotBGimg 6s linear infinite;

@@ -1,16 +1,11 @@
 <template>
   <div class="relative">
     <AHeader></AHeader>
-    <ABg></ABg>
     <section class="flex flex-justify-center gap-10 px-20">
       <article class="flex-1">
         <Content></Content>
       </article>
       <div class="hidden md:block">
-        <!-- <div class="sticky top-50% translate-y--50%">
-          <p>目录</p>
-          <Directory></Directory>
-        </div> -->
       </div>
     </section>
   </div>
