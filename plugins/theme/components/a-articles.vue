@@ -1,31 +1,24 @@
 <template>
   <div>
-    <div class="lg:w-4xl lg:ma pt-6">
-      <template v-for="page of pages" :key="page.key">
-        <!-- @click="gotoDetails(page.path)" -->
-        <div @click="gotoDetails(page.path)" class="mb-2">
-          <ACrad class="rounded-20px">
-            <div class="z-1">
-              <section class="flex flex-col lg:flex-row flex-items-center md:gap-4 lg:h-214px">
-                <div class="h-160px w100% md:w-300px md:h-100%">
-                  <img :src="getCover(page)" alt="封面" class="h100% w100%">
-                </div>
-                <div class="flex-1 flex flex-col flex-justify-between h-100%">
-                  <div>
-                    <h3 class="">{{ page.title }}</h3>
-                    <p class="indent-4 line-clamp-4">{{ getDescription(page) }}</p>
-                  </div>
-                  <div class="flex gap-2">
-                    <span class="text-neutral">更新:{{ getUpdateTime(page) }}</span>
-                    <span class="text-neutral">创建:{{ getCreateTime(page) }}</span>
-                  </div>
-                </div>
-              </section>
+    <template v-for="page of pages" :key="page.key">
+      <!-- @click="gotoDetails(page.path)" -->
+      <div class="mb-2">
+        <section class="flex h-214px bg-white">
+          <div class="flex-1 p3 flex flex-col justify-between">
+            <div class="text-center">
+              <h3 class="m0 pb-1">{{ page.title }}</h3>
+              <span class="text-neutral text-3">创建:{{ getCreateTime(page) }}</span>
             </div>
-          </ACrad>
-        </div>
-      </template>
-    </div>
+            <div class="flex-1">
+              <p class="indent-3 line-clamp-3">{{ getDescription(page) }}</p>
+            </div>
+            <div class="text-right">
+              <span class="text-neutral text-3">更新于:{{ getUpdateTime(page) }}</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </template>
   </div>
 </template>
 <script setup>

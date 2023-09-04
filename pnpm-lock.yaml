@@ -13,6 +13,9 @@ dependencies:
     version: 4.2.4(vue@3.3.4)
 
 devDependencies:
+  '@iconify/json':
+    specifier: ^2.2.111
+    version: 2.2.111
   '@vuepress/bundler-vite':
     specifier: 2.0.0-beta.66
     version: 2.0.0-beta.66
@@ -456,6 +459,13 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@iconify/json@2.2.111:
+    resolution: {integrity: sha512-/LpDXn355r1TJIooRiRjoEHpfmvmDBfWQFtP04bo9xO05NOfQpZwadCfXZw4d3eIF0SfIlPiLMHt3UfKOCRIMw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.1
+    dev: true
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}

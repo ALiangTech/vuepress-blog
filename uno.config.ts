@@ -1,8 +1,6 @@
 // uno.config.ts
 import { defineConfig } from 'unocss'
-import { presetWind } from 'unocss'
-
-
+import { presetWind, presetIcons } from 'unocss'
 const themeColors = {
   'geekblue-1': '#f0f5ff',
   'geekblue-2': '#d6e4ff',
@@ -20,6 +18,7 @@ const themeColors = {
 export default defineConfig({
   presets: [
     presetWind(),
+    presetIcons()
   ],
   theme: {
     colors: {

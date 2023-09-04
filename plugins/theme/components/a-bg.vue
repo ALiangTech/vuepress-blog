@@ -1,5 +1,5 @@
 <template>
-  <div class="h-sm header">
+  <div class="h-15rem header">
   </div>
 </template>
 <style scoped>

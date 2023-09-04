@@ -1,9 +1,12 @@
 <template>
-  <header class="flex justify-between items-center px-5 sticky top-0 z-100 gsap-header bg">
-    <h1 class="m0 p-4 clip">北境博客</h1>
-    <ul class="flex list-none">
+  <header class="flex justify-between items-center px-5 py-2 sticky top-0 z-100 gsap-header bg">
+    <div class="flex items-center">
+      <!-- <img src="./../assets/logo.png" class="h-15 w-15"> -->
+      <h1 class="m0 clip text-4">北境博客</h1>
+    </div>
+    <ul class="flex list-none m0">
       <li>
-        <a href="/">文章</a>
+        <a href="/">首页</a>
       </li>
       <li>系列</li>
     </ul>
@@ -41,6 +44,7 @@ function useAnimation() {
 
 .clip {
   background: linear-gradient(120deg, var(--vp-c-brand) 40%, var(--vp-c-brand-next));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow 30s linear infinite;
