@@ -16,25 +16,25 @@
   </header>
 </template>
 <script setup>
-import { onMounted } from 'vue'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+// import { onMounted } from 'vue'
+// import { gsap } from 'gsap'
+// import { ScrollTrigger } from 'gsap/ScrollTrigger'
+// gsap.registerPlugin(ScrollTrigger)
 
 // 添加背景色
-function useAnimation() {
-  onMounted(() => {
-    gsap.timeline({
-      scrollTrigger: {
-        start: 'top - 300',
-        end: 1000,
-        scrub: true
-        // pin: true
-      }
-    })
-      .to('.gsap-header', { backgroundColor: '#2f54eb' })
-  })
-}
+// function useAnimation() {
+//   onMounted(() => {
+//     gsap.timeline({
+//       scrollTrigger: {
+//         start: 'top - 300',
+//         end: 1000,
+//         scrub: true
+//         // pin: true
+//       }
+//     })
+//       .to('.gsap-header', { backgroundColor: '#2f54eb' })
+//   })
+// }
 // useAnimation()
 </script>
 <style scoped>
