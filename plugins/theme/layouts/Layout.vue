@@ -2,8 +2,8 @@
   <div class="relative">
     <AHeader></AHeader>
     <ABg></ABg>
-    <section class="flex flex-justify-center lg:gap-10 lg:px-20">
-      <article class="flex-1">
+    <section class="lg:gap-10 px-20px lg:px-20">
+      <article>
         <Content></Content>
       </article>
       <div class="hidden md:block">
