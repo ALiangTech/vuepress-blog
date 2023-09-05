@@ -2,7 +2,7 @@
   <header class="flex justify-between items-center px-5 py-2 sticky top-0 z-100 gsap-header bg">
     <div class="flex items-center">
       <!-- <img src="./../assets/logo.png" class="h-15 w-15"> -->
-      <h1 class="m0 clip text-4">北境博客</h1>
+      <h1 class="m0 clip text-4">极境博客</h1>
     </div>
     <ul class="flex list-none m0">
       <li>

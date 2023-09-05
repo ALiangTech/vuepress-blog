@@ -7,7 +7,7 @@ import { gitPlugin } from '@vuepress/plugin-git'
 import path from 'path'
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: 'blog',
+  title: '极境',
   description: 'vue javascript vue go',
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css' }],
