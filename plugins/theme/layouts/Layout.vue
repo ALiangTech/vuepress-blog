@@ -2,7 +2,7 @@
   <div class="relative">
     <AHeader></AHeader>
     <ABg></ABg>
-    <section class="flex flex-justify-center gap-10 px-20">
+    <section class="flex flex-justify-center lg:gap-10 lg:px-20">
       <article class="flex-1">
         <Content></Content>
       </article>

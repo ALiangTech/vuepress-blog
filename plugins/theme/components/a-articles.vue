@@ -1,8 +1,7 @@
 <template>
   <div>
     <template v-for="page of pages" :key="page.key">
-      <!-- @click="gotoDetails(page.path)" -->
-      <div class="mb-2">
+      <div @click="gotoDetails(page.path)" class="mb-2">
         <section class="flex h-214px bg-white">
           <div class="flex-1 p3 flex flex-col justify-between">
             <div class="text-center">
