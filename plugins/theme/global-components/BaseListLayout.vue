@@ -6,9 +6,9 @@
       <div class="flex pt-6 gap-6 max-w-6xl ma">
         <!-- 文章列表 -->
         <AArticels class="flex-1"></AArticels>
-        <div class="w-240px hidden lg:block">
+        <div class="w-214px hidden lg:block">
           <!-- 个人简介 -->
-          <div class="h-240px bg-white">
+          <div class="h-214px bg-white">
             <aSelf></aSelf>
           </div>
           <div>

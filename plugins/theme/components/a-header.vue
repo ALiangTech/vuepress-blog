@@ -4,13 +4,12 @@
       <!-- <img src="./../assets/logo.png" class="h-15 w-15"> -->
       <h1 class="m0 clip text-4">极境博客</h1>
     </div>
-    <ul class="flex list-none m0">
-      <li>
-        <a href="/">首页</a>
-      </li>
-      <li>系列</li>
-    </ul>
-    <div>
+    <div class="flex flex-items-center">
+      <ul class="flex list-none m0 gap-2 pr-5">
+        <li>
+          <a href="/">首页</a>
+        </li>
+      </ul>
       <Docsearch />
     </div>
   </header>
