@@ -11,7 +11,7 @@ export default defineUserConfig({
   description: 'vue javascript vue go',
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css' }],
-    ['link', { rel: 'icon', href: 'https://i.postimg.cc/50Mq4v24/favicon-32x32.png' }]
+    ['link', { rel: 'icon', href: '/favicon.png' }]
   ],
   plugins: [CustomTheme(), docsearchPlugin({ apiKey: 'kk', appId: '213', indexName: '' }), gitPlugin({
     // 配置项
